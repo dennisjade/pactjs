@@ -1,0 +1,22 @@
+{
+  "name": "provider",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test:pact": "jest pact.test.js",
+    "test:pact-broker": "jest pact-broker.test.js",
+    "can-i-deploy": "c:/pact/bin/./pact-broker.bat can-i-deploy --pacticipant DemoProvider --broker-base-url http://localhost:8000 --broker-username pact_workshop --broker-password pact_workshop --latest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@pact-foundation/pact": "^9.11.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "rimraf": "2.6.2"
+  }
+}
